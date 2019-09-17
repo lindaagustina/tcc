@@ -7,3 +7,7 @@ Melanjutkan laporan yang pertama
 ![](../minggu-01/img/23.png)
 3. Pindah ke branch master
 ![](../minggu-01/img/24.png)
+4. Delete branch edit-readme-2
+![](../minggu-01/img/25.png)
+5. `git reset --hard` untuk membatalkan perubahan yang terjadi.
+![](../minggu-01/img/26.png)
