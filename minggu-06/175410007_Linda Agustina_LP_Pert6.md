@@ -25,3 +25,27 @@ Deploying Your First Docker Container
 ![](img/11.png)
 12. Perintah di bawah ini digunakan untuk masuk ke dalam container ubuntu.
 ![](img/12.png)
+
+Create Nginx Static Web Server
+1. Membuat Dockerfile, Dockerfile dibuat untuk membuat image. Di dalam Dockerfile ini, diawali dengan base image yang ditandai dengan `FROM`.
+![](img/13.png)
+2. Untuk membuat image dari Dockerfile menggunakan perintah `docker built -t (nama image) .`, -t digunakan untuk tag.
+![](img/14.png)
+3. Untuk melihat daftar image yang ada menggunakan printah `docker images`
+![](img/15.png)
+4. Menjalankan docker images agar menajadi container.
+![](img/16.png)
+5. Mengakses hasil dari container tersebut dengan perintah `curl`.
+![](img/17.png)
+
+Building Container images
+1. Membuat Dockerfile dengan base image nginx:1.11-alpine
+![](img/18.png)
+2. Build image dengan nama my-nginx-latest:latest
+![](img/19.png)
+3. Menjalankan image
+![](img/20.png)
+4. Mengakses docker
+![](img/21.png)
+5. Melihat daftar container yang jalan.
+![](img/22.png)
