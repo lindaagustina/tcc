@@ -1,6 +1,7 @@
 # UTS
 
 *Pengertian Docker*
+
 Docker adalah sebuah proyek yang bersifat open source dibawah lisensi Apache Versi 2.0 yang bisa dipergunakan secara gratis oleh developer dan berfungsi sebagai wadah atau container untuk memasukkan sebuah aplikasi secara lengkap beserta semua hal lainnya yang dibutuhkan sehingga dapat berjalan dimana saja.
 Dalam hal ini, developer atau sysadmin dapat menjalankan aplikasi di mana pun misalnya di laptop, data center, virtual machine dan cloud.
 Docker adalah salah satu platform yang dibangun berdasarkan teknologi container.
@@ -18,13 +19,17 @@ atau sebagai layanan pribadi (perangkat lunak atau alat) di dalam firewall, atau
 SaaS (software as a service atau perangkat lunak berbentuk layanan) adalah suatu model penyampaian aplikasi perangkat lunak oleh suatu vendor perangkat lunak yang mengembangkan aplikasi web yang diinangi dan dioperasikan (baik secara mandiri maupun melalui pihak ketiga) untuk digunakan oleh pelanggannya melalui Internet.
 Pelanggan tidak mengeluarkan uang untuk memiliki perangkat lunak tersebut melainkan hanya untuk menggunakan. Pelanggan menggunakan perangkat lunak tersebut melalui antarmuka pemrograman aplikasi yang dapat diakses melalui web dan seringkali ditulis menggunakan layanan web atau REST.
 
+*Keterkaitan antara Docker, PaaS dan SaaS*
+
+Docker merupakan salah satu bagian dari PaaS karena docker merupakan container, SaaS dibangun di atas PaaS.
+
 *Upload Images to Docker Hub*
 
 1. Masuk ke direktori tcc.
 ![](img/1.png)
-2. Kemudian membuat direktori dengan nama UTS, lalu pindah ke direktori tersebut. Kemudian membuat file Dockerfile.
+2. Kemudian membuat direktori dengan nama UTS, lalu pindah ke direktori tersebut. Kemudian membuat file Dockerfile, Dockerfile adalah suatu dokumen yang berisi perintah-perintah yang diperlukan untuk membuat suatu images.
 ![](img/2.png)
-3. Dockerfile tersebut menggunakan base image nginx:alpine.
+3. Dockerfile tersebut menggunakan base image nginx:alpine. Dockerfile ini dapat diakses menggunakan GitHub pada URL https://github.com/lindaagustina/tcc/blob/master/uts/Dockerfile.
 ![](img/12.png)
 4. Membuat image nginx menggunakan file Dockerfile tersebut, dengan perintah `docker build -t (nama-image:tag) .` titik (.) digunakan untuk medeklarasikan bahwa Dockerfile yang akan digunakan terdapat pada direktori tersebut.
 ![](img/3.png)
@@ -39,5 +44,6 @@ Pelanggan tidak mengeluarkan uang untuk memiliki perangkat lunak tersebut melain
 ![](img/9.png)
 8. Upload docker image yang sudah diganti taggingnya, menggunakan perintah `docker push lindaagustina/nginx:uts`.
 ![](img/10.png)
-9. Jika sudah berhasil dipush, maka akan mucul images yang telah dipush pada Docker Hub kita.
+9. Jika sudah berhasil dipush, maka akan muncul images yang telah dipush pada Docker Hub kita. Jika ingin mengakses images nginx tersebut dapat diakses melalui URL berikut https://hub.docker.com/r/lindaagustina/nginx/tags.
 ![](img/11.png)
+10. Docker images adalah sebuah template yang bersifat read only. Template ini sebenarnya adalah sebuah OS yang telah diinstall berbagai aplikasi. Docker images berfungsi untuk membuat docker container, menggunakan 1 docker images kita dapat membuat banyak docker container.
