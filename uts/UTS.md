@@ -21,7 +21,7 @@ Pelanggan tidak mengeluarkan uang untuk memiliki perangkat lunak tersebut melain
 
 **Keterkaitan antara Docker, PaaS dan SaaS**
 
-Docker merupakan salah satu bagian dari PaaS karena docker merupakan container, SaaS dibangun di atas PaaS.
+![](img/15.png)
 
 **Upload Images to Docker Hub**
 
@@ -47,3 +47,6 @@ Docker merupakan salah satu bagian dari PaaS karena docker merupakan container, 
 9. Jika sudah berhasil dipush, maka akan muncul images yang telah dipush pada Docker Hub kita. Jika ingin mengakses images nginx tersebut dapat diakses melalui URL berikut https://hub.docker.com/r/lindaagustina/nginx/tags.
 ![](img/11.png)
 10. Docker images adalah sebuah template yang bersifat read only. Template ini sebenarnya adalah sebuah OS yang telah diinstall berbagai aplikasi. Docker images berfungsi untuk membuat docker container, menggunakan 1 docker images kita dapat membuat banyak docker container.
+11. Menjalankan docker images agar menjadi sebuah container dengan perintah docker run -d -p 8080:80 --name=linda-nginx lindaagustina/nginx:uts yang artinya akan menjalankan docker container pada port 8080 (browser), dan docker akan mengarahkan ke service port 80 pada container dengan nama linda-nginx.
+![](img/13.png)
+![](img/14.png)
