@@ -1,4 +1,4 @@
-#Instalasi Drupal menggunakan Docker Compose
+# Instalasi Drupal menggunakan Docker Compose
 
 1. Membuat direktori my_drupal, kemudian pindah ke direktori tersebut.
 ![](img/1.png)
@@ -20,4 +20,4 @@
 9. Konfigurasi site
 ![](img/11.png)
 10. Proses selesai, dan muncul tampilan awal drupal.
-![](12.png)
+![](img/12.png)
