@@ -1,5 +1,5 @@
 # tcc
 
-Linda Agustina
-175410007
+Linda Agustina\
+175410007\
 TI-9
